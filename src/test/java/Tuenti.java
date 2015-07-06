@@ -24,8 +24,9 @@ public class Tuenti  {
         element = driver.findElement(By.id("submit_button"));
         element.click();
 
-        driver_wait.until(ExpectedConditions.presenceOfElementLocated(By.id("sharebox_commentfield_75042979")));
-        
+        driver_wait.until(ExpectedConditions.presenceOfElementLocated(By.id("sharebox_suggestion_75042979")));
+        element = driver.findElement(By.id("sharebox_suggestion_75042979"));
+        element.click();
         element = driver.findElement(By.id("sharebox_commentfield_75042979"));
         element.sendKeys("Hola ni\u00f1os \u00f1am \u00f1am");
         element = driver.findElement(By.id("sharebox_savebutton_75042979"));
